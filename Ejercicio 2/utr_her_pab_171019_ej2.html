@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Preparar la web para dseño responsivo-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Codificación-->
+    <title>Comparativa - utrherpab</title>
+    <!--Título-->
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">Utrherpab - Comparativa de coches</h1>
+    <br>
+    <!--Salto de línea-->
+    <p style="text-align: center;">Utrherpab - Vamos a comparar estos coches:</p>
+    <br><br>
+    <ol>
+        <li>Skoda - utrherpab - Superb</li>
+        <li>Skoda - utrherpab - Kodiaq</li>
+        <li>Renault - utrherpab - Zoe</li>
+        <li>Renault - utrherpab - Espace</li>
+    </ol>
+
+    <br><br>
+
+    <video id="ososId" width="300" height="300" autoplay controls loop="loop" style="display: block; margin: auto;">
+        <source src="Recursos/SkodaSuperb.mp4" type="video/mp4">
+        <source src="Recursos/SkodaSuperb.ogv" type="video/ogv">
+        <source src="Recursos/SkodaSuperb.webm" type="video/webm">
+    </video>
+
+    <br><br>
+
+    <table style="border: 1px solid black; text-align: center;">
+        <thead style="border: 1px solid black; text-align: center;">
+            <tr>
+                <th style="border: 1px solid black; text-align: center;">Modelo de coches</th>
+                <th style="border: 1px solid black; text-align: center;">Skoda</th>
+                <th style="border: 1px solid black; text-align: center;">Renault</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2"></td>
+                <td style="border: 1px solid black; text-align: center;">
+                    <p>Superb TDI 150 CV</p>
+                    <img src="Recursos/SkodaSuperb.jpg" title="Superb TDI 150 CV" alt="Superb TDI 150 CV">
+                </td>
+                <td style="border: 1px solid black; text-align: center;">
+                    <p>Zoe Entry 88 CV</p>
+                    <img src="Recursos/RenaultZOE.jpg" title="Zoe Entry 88 CV" alt="Zoe Entry 88 CV">
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; text-align: center;">
+                    <p>Kodiaq 2.0 TDI 150 CV</p>
+                    <img src="Recursos/SkodaKodiaq.jpg" title="Kodiaq 2.0 TDI 150 CV" alt="Kodiaq 2.0 TDI 150 CV">
+                </td>
+                <td style="border: 1px solid black; text-align: center;">
+                    <p>Espace 1.6 DCI130 Life 6V</p>
+                    <img src="Recursos/RenaultEspace.jpg" title="Espace 1.6 DCI130 Life 6V"
+                        alt="Espace 1.6 DCI130 Life 6V">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="border: 1px solid black; text-align: center;" colspan="3">
+                    <p>Esto es el pie de la tabla: Datos tomados de autofacil.es</p>
+                    <p>Nombre de fichero de examen: utr_her_pab_ex171019_ej2.html</p>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <h2 style="text-align: center;">Encuesta</h2>
+    <form name="formulariocompleto1" id="formulariocompleto1id" action="" method="">
+
+        <legend>Rellena los datos con tu modelo de coche favorito:</legend>
+        <br><br>
+
+        <label for="marca">Marca: </label>
+        <br>
+        <input type="text" id="marcaId" name="marca" placeholder="Introduce marca" title="Debes introducir una marca."
+            required>
+        <br>
+
+        <label for="modelo">Modelo: </label>
+        <br>
+        <input type="text" id="modeloId" name="modelo" placeholder="Introduce modelo"
+            title="Debes introducir un modelo." required>
+        <br>
+
+        <label for="cv">CV: </label>
+        <br>
+        <input type="number" id="cvId" name="cv" placeholder="Introduce potencia"
+            title="Debes introducir la cantidad de potencia." required>
+        <br>
+
+        <label for="colorC">Color favorito para el coche: </label>
+        <br>
+        <input type="color" id="colorCId" name="colorC">
+        <br>
+
+        <label for="id">Identificador de usuario: </label>
+        <br>
+        <input type="text" id="idId" name="id" placeholder="Identificador"
+            title="Debes introducir dos letras mayúsculas, cuatro números, 
+            una letra minúscula, un número y no puedes exceder 8 caracteres."
+            maxlength="8" pattern="[A-Z]{2}[0-9]{4}[a-z]{1}[0-9]{1}" required>
+        <br><br>
+
+        <input type="submit" value="Enviar mis opiniones">
+        
+    </form>
+
+</body>
+
+</html>
